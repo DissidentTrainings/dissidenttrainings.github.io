@@ -39,16 +39,21 @@ title: "Dissident Trainings"
                 </div>
             </div>        
         </div>
+
         <div class="container">
             <div class="hero-unit">
-                <h2>Blog</h2>
-                {% for post in site.posts %}
+                    <h1>Blog</h1>
+                  {% for post in site.posts %}
                     {{ post.date | date: "%B %e, %Y" }}
                     <a href="{{ post.url }}">{{ post.title }}</a>
                 {% endfor %}
+               
+
             </div>
         </div>
 
+<h2>Blog</h2>
+              
 
 
 

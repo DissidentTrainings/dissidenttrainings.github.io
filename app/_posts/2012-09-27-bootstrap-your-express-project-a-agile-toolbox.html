@@ -1,0 +1,44 @@
+---
+layout: post
+title: Bootstrap your Express Project - A agile toolbox
+date: 2012-09-27 11:14:41.000000000 +02:00
+categories:
+- agile
+- craftsmanship
+- development
+- javascript
+tags:
+- CI
+- express.js
+- mocha
+- node.js
+- TDD
+- Travis CI
+status: publish
+type: post
+published: true
+meta: {}
+author: 
+---
+<p>When starting with a new node/express project there is a variety of tools available that help your development effort. I have started a new project and want to write down my recommendations for the tools to use.</p>
+<p><strong>TL;TR; You can clone a github repo <a href="https://github.com/sebs/express-tdd-ci-template">here</a> and start right away.And see the build status on <a href="http://travis-ci.org/#!/sebs/express-tdd-ci-template">travis</a></strong></p>
+<h2> NPM and package.json</h2>
+<p>Since you will have to manage dependencies in your node project, i advise you to start up with a package.json. This file contains the node modules you are using in your application. You might wanna exclude node_modules via the .gitignore file to avoid external node modules beeing checkied into git. You should now have a basic package.json file and a .gitignore file. Both need to be pushed to master right now.</p>
+<p>A <a href="http://blog.nodejitsu.com/package-dependencies-done-right">Blog Post </a>about NPM and package.json</p>
+<h2>Express.js</h2>
+<p>After you installed express.js via npm and your package JSON  you simply generate a Application Skeleton via the express command line tool. Now you have the skeleton application and push this to git. You might wanna add jade to your dependencies.</p>
+<p>Express.js starter <a href="http://expressjs.com/guide.html">tutorial</a></p>
+<h2>Grunt.js</h2>
+<p>Grunt helps you with linting your javascript files and orchestrate your general build. A grunt.js file in your projects root contains all the information that it needs to validate your project. To integrate it with npm aka npm test you can add a scripts.test property to your package json. Note that the npm grunt package is listed under the devDependencies property.</p>
+<p>grunt.js <a href="https://github.com/cowboy/grunt">docs</a></p>
+<h2>Mocha</h2>
+<p>Mocha is a nice Unit Test framework. You want to use it for your TDD efforts. You can integrate this nicely into your grunt.js file to combine linting of js files and unit tests. Mocha and its commandos need a little tuning in the grunt.js template in order to make it stop complaining about unknown globals</p>
+<p>Mocha <a href="http://visionmedia.github.com/mocha/">docs</a></p>
+<h2>Supertest</h2>
+<p>You mioght wanna test HTTP calls to your apps in a isolated way to check if not only your library code is working but your Webserver anwers with the right HTTP status codes etc.</p>
+<p>Supertest <a href="https://github.com/visionmedia/supertest">Github</a> repo</p>
+<h2>Travis CI</h2>
+<p>In order to let all your tests run as soon as you have pushed to your git you might wanna setup a travis ci build. Just connect travis to your repo and add .travis.yml file.</p>
+<p>This is a superfast development chain that will help you to get superfast at implementing features into your app. The Setup time of ca. 20 Minutes will help a lot of time.</p>
+<p>Travis setup <a href="http://about.travis-ci.org/docs/user/languages/javascript-with-nodejs/">docs</a> for node.</p>
+<p>You can clone a github repo <a href="https://github.com/sebs/express-tdd-ci-template">here</a> and start right away.</p>

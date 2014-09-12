@@ -1,0 +1,31 @@
+---
+layout: post
+title: The hen and egg problem
+date: 2014-04-10 21:47:08.000000000 +02:00
+categories:
+- nvc
+tags: []
+status: publish
+type: post
+published: true
+meta:
+  _publicize_pending: '1'
+author: 
+---
+<p>Imagine, you do a project with a UX guy. He is building the UI and expects an api while doing so.</p>
+<p><strong>The Problem</strong></p>
+<p>The API will change and new methods will be required as well as changes to "old" parts of the API. You are creative, right? Not everything is laid out in a User-Story, right? New features lead to new Ideas, right?</p>
+<p>This leads to a slow down in the cycle. A Server is a different thing. If you want to release, you need a working server component and the client. In order to build a stable one, a defined interface in terms of a restful API would be a good start.</p>
+<p>However, this Ping-Pong has a price: time.</p>
+<p><strong>Fake it, until you make it</strong></p>
+<p>A good Idea would be a API prototype, kinda easy to create and change. In a very short amount of time. Save the time for the concrete implementation of the API by using a mock System.</p>
+<blockquote><p><em>Interfake is a tool which allows developers of client-side applications of any platform to easily create dummy HTTP APIs to develop against. Let's get started with a simple example.</em></p></blockquote>
+<p><a href="https://github.com/basicallydan/interfake">Interfake on Github</a></p>
+<p>Playing Ping-Pong with the UX guy just got faster.</p>
+<p>Finding out (learning) the requirements of an API is part of the building process (Hello no estimates folks). The cycle time here, goes down (Hello Kanban Community).</p>
+<p>Optional: You could create a bunch of tests for the mock API to code the real API against. This is not implemented (yet?). This would be a nice Artifact for a TDD process, right? Estimating a User-Story in a agile context that already has a bunch of ready made Unit-Tests is easy? I would think so.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>

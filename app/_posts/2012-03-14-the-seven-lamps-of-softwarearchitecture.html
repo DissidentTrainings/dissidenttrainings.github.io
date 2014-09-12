@@ -1,0 +1,38 @@
+---
+layout: post
+title: The seven Lamps of (Software)Architecture
+date: 2012-03-14 09:48:22.000000000 +01:00
+categories:
+- agile
+- craftsmanship
+- development
+tags: []
+status: publish
+type: post
+published: true
+meta: {}
+author: 
+---
+<p>I am still reading “<a href="http://www.amazon.com/The-Craftsman-Richard-Sennett/dp/0300151195/ref=sr_1_1?ie=UTF8&amp;qid=1331713637&amp;sr=8-1" target="_blank">The Craftsman</a>” by Richard Sennet, a book that was given to me by a very smart Product-Designer/UX-Guy/Carpenter because we talked a lot about the merits on the crafty part of software-development and web-architecture. Amazon describes it as:</p>
+<blockquote><p><em>Why do people work hard, and take pride in what they do? This book, a philosophically-minded enquiry into practical activity of many different kinds past and present, is about what happens when people try to do a good job. It asks us to think about the true meaning of skill in the ‘skills society’ and argues that pure competition is a poor way to achieve quality work. Sennett suggests, instead, that there is a craftsman in every human being, which can sometimes be enormously motivating and inspiring - and can also in other circumstances make individuals obsessive and frustrated.“The Craftsman” shows how history has drawn fault-lines between craftsman and artist, maker and user, technique and expression, practice and theory, and that individuals' pride in their work, as well as modern society in general, suffers from these historical divisions. But the past lives of crafts and craftsmen show us ways of working (using tools, acquiring skills, thinking about materials) which provide rewarding alternative ways for people to utilize their talents. We need to recognize this if motivations are to be understood and lives made as fulfilling as possible.</em></p></blockquote>
+<p>In the Book is a whole chapter about <a href="http://en.wikipedia.org/wiki/John_Ruskin" target="_blank">John Ruskin</a>, a art critic in the Victorian era who had interest environmentalism, sustainability, craft and his “7 Lamps of Architecture”. These are a part of an essay that was a (slightly polemic) critic on the architectural style of that time. The <a href="http://www.archive.org/details/lampsofarchseven00ruskrich" target="_blank">“7 Lamps of Architecture”</a> represent a take on the “good deeds” of construction things, in this case architecture for buildings. Long story short, I find these 7 principles apply to the construction of software architectures as well and I want to outline the connection here.</p>
+<p><!--more--></p>
+<h2><strong>7 Lamps of (Software)Architecture</strong></h2>
+<p><em><strong>Sacrifice</strong> – dedication of man’s craft to God, as visible proofs of man’s love and obedience</em></p>
+<p>There are physical facts you have to obey and you better do not try to get around them. For example: Network has latency, bandwidth limits and might not be available all the time. Better design for it and be dedicated to it, don’t be sloppy and build tech debt.</p>
+<p><em><strong>Truth</strong> – handcrafted and honest display of materials and structure.</em></p>
+<p>Do not cover up the real architecture of a software design behind thick layers. It is what it is and is has to work this way. The Single responsibility principle might be a way to interpret this.</p>
+<p><em><strong>Power</strong> – buildings should be thought of in terms of their massing and reach towards the sublimity of nature by the action of the human mind upon them and the organization of physical effort in constructing buildings.</em></p>
+<p>Take into consideration that humans are after all the Users of your software. Design it that way. Think about who is the End-User and how many of them will be there.</p>
+<p><em><strong>Beauty</strong> – aspiration towards God expressed in ornamentation drawn from nature, his creation</em></p>
+<p>Yes there is the saying “Form follows function”, but there is a little more if you walk the world with open eyes. A User interface might need some Beauty to be used with Joy. Take Joy of the End-User and Administrator into consideration when building things.</p>
+<p><em><strong>Life</strong> – buildings should be made by human hands, so that the joy of masons and stone-carvers is associated with the expressive freedom given them</em></p>
+<p>Even if you the architect decided on principles for the design of a system, the thing is built by Programmers and UX-Designers. They need not only some freedom to do so. Work closely with them to avoid a technical perfect but boring product just created by design principles and build by numb coders just following them.</p>
+<p><em><strong>Memory</strong> – buildings should respect the culture from which they have developed</em></p>
+<p>You are developing the Software in a specific environment. One example might be the customers lingo that you find in the design of classes and database layouts as well as in the name of the fields of your web forms.</p>
+<p><em><strong>Obedience</strong> – no originality for its own sake, but conforming to the finest among existing English values, in particular expressed through the “English Early Decorated” Gothic as the safest choice of style.</em></p>
+<p>I guess we are back at “Form follows Function”, there should be a  reasoning behind a design. You can measure a lot do things and should not build just what you want. <a href="http://en.wikipedia.org/wiki/Lean_Startup">Lean Startup</a> being here the latest example coming to my mind.</p>
+<p>These are just small examples of how you could interpret Ruskin’s take on Architecture. I found that very enlightening in the angle of the “Software Craftsmanship”-Thinking.</p>
+<h2><strong>Seriously?</strong></h2>
+<p>You have to take into consideration that this essay was heavily influenced by the industrialization and the dehumanization coming with it. The seven Lamps are an Idea and not a set of rules carved into the stones of Software Architecture/Development. I hope it makes you think and I want to close with a citing attributed to Ruskin</p>
+<blockquote><p><em>THERE IS NO WEALTH BUT LIFE. Life, including all its powers of love, of joy, and of admiration. That country is the richest which nourishes the greatest number of noble and happy human beings; that man is richest who, having perfected the function of his own life to the utmost, has always the widest helpful influence, both personal, and by means of his possessions, over the lives of others.</em></p></blockquote>
