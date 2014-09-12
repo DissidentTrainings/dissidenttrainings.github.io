@@ -310,5 +310,5 @@ module.exports = function (grunt) {
         'test',
         'build'
     ]);
-    grunt.registerTask('deploy', ['githubPages:target']);
+    grunt.registerTask('deploy', ['build','githubPages:target']);
 };
