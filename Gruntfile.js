@@ -33,7 +33,7 @@ module.exports = function (grunt) {
             commitMessage: 'push'
             },
             // The folder where your gh-pages repo is
-            src: './dist'
+            src: '/Users/sebs/projects/dissidenttrainings.github.io/dist'
             }
         },
 
@@ -313,5 +313,5 @@ module.exports = function (grunt) {
         'build'
     ]);
 
-    grunt.registerTask('deploy', ['build', 'githubPages:target']);
+    grunt.registerTask('deploy', ['githubPages:target']);
 };
