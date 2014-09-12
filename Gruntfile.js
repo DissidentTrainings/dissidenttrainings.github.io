@@ -25,16 +25,18 @@ module.exports = function (grunt) {
 
     grunt.initConfig({
         yeoman: yeomanConfig,
+
         githubPages: {
             target: {
-                options: {
-                // The default commit message for the gh-pages branch
-                commitMessage: 'push'
-                },
-                // The folder where your gh-pages repo is
-                src: 'dist'
+            options: {
+            // The default commit message for the gh-pages branch
+            commitMessage: 'push'
+            },
+            // The folder where your gh-pages repo is
+            src: './dist'
             }
         },
+
         watch: {
             recess: {
                 files: ['<%= yeoman.app %>/assets/styles/{,*/}*.less'],
@@ -310,5 +312,6 @@ module.exports = function (grunt) {
         'test',
         'build'
     ]);
-    grunt.registerTask('deploy', ['build','githubPages:target']);
+
+    grunt.registerTask('deploy', ['build', 'githubPages:target']);
 };
