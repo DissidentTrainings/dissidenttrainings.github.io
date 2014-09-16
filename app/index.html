@@ -1,60 +1,20 @@
 ---
 layout: default
-title: "Dissident Trainings"
 ---
 
-        <div class="container">
-            <div class="hero-unit">
-                <h1>Dissdent Trainings</h1>
-                <p>
-                    <b>Die Mission:</b> To provide the highest level of personal financial services in a friendly, professional manner; to encourage thrift, savings and the wise use of credit; to increase the knowledge and ability of our members to manage and control their financial well-being; to provide sound financial management in order to maintain earnings for our continued growth and to provide our employees with a challenging and rewarding career.
-                </p>
-            </div>
-        </div>
-        <div class="container">
-            <h2>Wer ich bin</h2> 
-            <p>
+<div class="home">
 
+  <h1>Posts</h1>
 
-            </p>  
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="span4">
-                    <h2>Pair programming</h2>
-                    Bugfixing und Grooming scheinen zwei  der wenig reizvollen Aufgaben im Team zu sein. Sie sind zeit- und somit kostenintensiv.
-                    Pairprogramming reduziert diesen Aufwand bereits bei der Programmierung. Weniger Fehler entstehen, Programmierungen sind durchdachter, kompakter und qualitativ hochwertiger.
-                </div>
-                <div class="span4">
-                    <h2>XP</h2>
-                    Im Extreme Programming finden viele Aspekte des agilen Manifests ihre Entsprechung.
-                    Prinzipien wie Menschlichkeit, Wirtschaftlichkeit, Qualität und Reflektion gehen Hand in Hand mit kontinuierlicher Verbesserung, enger Zusammenarbeit mit dem Kunden,  Fokussierung, Flexibilität und kontinuierliche Lieferung fertiger Software-Bausteine.
-                </div>
-                <div class="span4">
-                    <h2>BDD</h2>
-                    Eine gemeinsame Sprache und konkrete Umsetzung- komm zum Punkt!
- 
-                    User Stories sind Bestandteil der in XP genutzten Tools. Die zwei Hauptaufgaben der User Story sind einerseits eine gemeinsame Metapher für Kunden und Programmierer zu schaffen (Mißverständnisse und damit Fehler reduzieren) und andererseits direkt Features und Szenarien zu definieren.
-                </div>
-            </div>        
-        </div>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
 
-        <div class="container">
-            <div class="hero-unit">
-                    <h1>Blog</h1>
-                  {% for post in site.posts %}
-                    {{ post.date | date: "%B %e, %Y" }}
-                    <a href="{{ post.url }}">{{ post.title }}</a>
-                {% endfor %}
-               
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
-            </div>
-        </div>
-
-<h2>Blog</h2>
-              
-
-
-
-
-
+</div>

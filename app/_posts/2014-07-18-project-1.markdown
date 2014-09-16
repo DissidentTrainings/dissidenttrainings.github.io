@@ -1,0 +1,13 @@
+---
+layout: default
+modal-id: 1
+date: 2014-07-18
+img: cabin.png
+alt: image-alt
+project-date: April 2014
+client: Start Bootstrap
+category: Web Development
+description:  Bugfixing und Grooming scheinen zwei  der wenig reizvollen Aufgaben im Team zu sein. Sie sind zeit- und somit kostenintensiv. Pairprogramming reduziert diesen Aufwand bereits bei der Programmierung. Weniger Fehler entstehen, Programmierungen sind durchdachter, kompakter und qualitativ hochwertiger.
+title: Pair Programming
+---
+
